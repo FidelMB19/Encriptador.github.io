@@ -1,0 +1,245 @@
+/* estilos generales */
+:root {
+    --bgColor: skyblue;
+    --bgColor2: grey;
+    --textColor: black;
+    --transparent: rgb(54, 54, 112);
+    overflow: auto;
+  }
+  * {
+    background-color: var(--bgColor2);
+    color: var(--textColor);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    color: #f2f1f9;
+  }
+  /* estilos del header */
+  header {
+    width: 185px;
+    display: flex;
+  }
+  .navbar {
+    width: 100%;
+  }
+  navbar-img,
+  navbar-logo {
+    width: 100%;
+  }
+  .navbar-content {
+    height: calc(100% - 74px);
+  }
+  /* estilos dentro del main */
+  main {
+    width: calc(100% - 185px);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* estilos del primer text area */
+  .textToEncrypt-and-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 96%;
+    margin: auto;
+    padding-top: 90px;
+  }
+  .textToEncrypt {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    height: calc(100% - 180px);
+    
+  }
+  .textToProcessed {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 90%;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 19px;
+    border: solid 2px var(--transparent);
+    outline: none;
+    resize: none;
+  
+  }
+  .textToProcessed::placeholder {
+    color: var(--textColor);
+    font-weight: normal;
+  }
+  .div-erase {
+    text-align: center;
+    width: 10%;
+  }
+  .erase {
+    width: 100%;
+    cursor: pointer;
+  }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    max-height: 30%;
+    min-height: 150px;
+  }
+  .menssageToUser{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+  
+  }
+  .exclamationMark{
+    width: 25px;
+    height: auto;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  .btn {
+    width: 40%;
+    height: 67px;
+    margin: auto;
+    background-color: var(--transparent);
+    color: var(--textColor);
+    border: solid 2px var(--textColor);
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .btn1 {
+    background-color: var(--transparent);
+    color: var(--textColor);
+  }
+  /* estilos para el segundo text area */
+  .processedText {
+    display: flex;
+    margin: auto;
+    width: 30%;
+    border-radius: 20px;
+    background-color: grey;
+    min-height: 650px;
+    max-height: auto;
+  
+    -webkit-box-shadow: 0px 0px 19px 1px black;
+  -moz-box-shadow: 0px 0px 19px 1px black;
+  box-shadow: 0px 0px 19px 1px black;
+  }
+  .noContentGreat {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-height: 90%;
+    min-height: 600px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: white;
+  }
+  .noCntent-div-img {
+    width: 80%;
+    margin: auto auto 0 auto;
+    object-fit: cover;
+    background-color: white;
+  }
+  .noCntent-img {
+    margin: auto;
+    background-color: white;
+  }
+  
+  .noContent-div-text {
+    margin: auto;
+    background-color: white;
+    text-align: center;
+  }
+  .noContent-h2 {
+    margin: auto;
+    text-align: center;
+    background-color: white;
+  }
+  .noConten-p {
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    margin-top: 30px;
+  }
+  .yesContent{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 100%;
+    min-height: 800px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+  }
+  .noContentShort{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    border-radius: 20px;
+  }
+  .textArea-processedText{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: var(--textColor);
+    border-radius: 20px;
+  }
+  .processedText-textarea{
+    display: inline-block;
+    max-width: 90%;
+    min-width: 90%;
+    min-height: 600px;
+    margin: auto;
+    background-color: whitesmoke;
+    border: var(--textColor);
+    font-size: 25px;
+    resize: vertical;
+    margin: auto;
+    outline: none;
+    overflow: auto;
+  }
+  .btn-copy{
+    background-color: var(--transparent);
+    color: var(--textColor);
+    width: 80%;
+  }
+
+  .row{
+    background: white
+}
+.footer{
+    color: whitesmoke;
+    font-size:20px;
+    display: flex;
+    margin-top:50px;
+    width:100%;
+    height:200px;
+  
+}
+
+.text-footer {
+    margin: 0px;
+    padding-top: 50px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 0em 0em 0.3125em black;
+    margin-top:50px;
+    width:100%;
+    height:200px;
+}

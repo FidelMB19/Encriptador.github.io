@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="shortcut icon" href="imagen/alura.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style/styles.css">
+        <link rel="stylesheet" href="style/responsive.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="navbar-logo">
+                    <img src="imagen/Logo-2.png" alt="Logo" class="navbar-img">
+                </div>
+                <div class="navbar-content">
+
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <article class="textToEncrypt-and-buttons">
+                <section class="textToEncrypt">
+                    <textarea class="textToProcessed" placeholder="Ingrese texto"></textarea>
+                    <div class="div-erase">
+                    </div>
+                </section>
+
+                <section class="buttons">
+                    <div class="menssageToUser">
+                        <img src="imagen/alert-circle.svg" alt="signo de exclamación" class="exclamationMark"title="no se aceptan los caracteres ´ á é í ó ú" />
+                        <p class="userMenssage-p" >Ingrese palabras en minúscula y sin signos ortográficos </p>
+                    </div>
+                    <input type="button" class="btn-encrypt btn btn1"
+                        value="Encriptar"/>
+                    <input type="button" class="btn-decrypt btn btn2"
+                        value="Desencriptar"/>
+                </section>
+            </article>
+
+            <article class="processedText">
+            </article>
+
+        </main>
+
+        <script src="js/encryptor.js"></script>
+        <script src="js/styles.js"></script>
+    </body>
+    <footer class="footer">
+        <p class="text-footer">Edwin Medina <br>© Programa Oracle ONE 2022</br></p>
+        </div>
+    </footer>
+</html>
